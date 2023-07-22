@@ -14,24 +14,27 @@ public class Process {
         this.arrivalTime = arrivalTime;
         this.burstTime = burstTime;
         this.executionTime = 0;
+        this.completionTime = 0;
+        this.turnaroundTime = 0;
+        this.waitingTime = 0;
     }
     
     public boolean isCompleted() {
-        return executionTime >= burstTime;
+        if (executionTime >= burstTime) {
+            return true;
+        } else {
+            return false;
+        }
     }
-    
     public void execute(int executionTime) {
         this.executionTime += executionTime;
     }
-    
     public void setCompletionTime(int completionTime) {
         this.completionTime = completionTime;
     }
-    
     public void setTurnaroundTime(int turnaroundTime) {
         this.turnaroundTime = turnaroundTime;
     }
-    
     public void setWaitingTime(int waitingTime) {
         this.waitingTime = waitingTime;
     }
