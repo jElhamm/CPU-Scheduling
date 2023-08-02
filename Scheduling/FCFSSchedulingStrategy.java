@@ -1,5 +1,3 @@
-package com.cpu_scheduler;
-
 /**
  * FCFS Scheduling Strategy:
  * This scheduling strategy executes processes in the order they arrive.
