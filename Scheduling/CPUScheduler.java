@@ -1,5 +1,3 @@
-package com.cpu_scheduler;
-
 import java.util.List;
 
 public class CPUScheduler {

@@ -1,5 +1,3 @@
-package com.cpu_scheduler;
-
 public class Process {
     private String name;
     private int arrivalTime;
